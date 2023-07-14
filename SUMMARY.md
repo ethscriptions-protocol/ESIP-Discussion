@@ -1,4 +1,4 @@
 # Table of contents
 
-* [ESIP-1](README.md)
-* [Readme](<README (1).md>)
+* [Readme](README.md)
+* [ESIP-1](<README (1).md>)
