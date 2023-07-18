@@ -41,8 +41,8 @@ Below is an example of how an Ethscription transfers could be validated after th
 ```javascript
 const _ = require('lodash');
 
-<strong>function validTransfers(ethscriptionTransfers) {
-</strong>  const sorted = _.sortBy(
+function validTransfers(ethscriptionTransfers) {
+  const sorted = _.sortBy(
     ethscriptionTransfers,
     ['blockNumber', 'transactionIndex', 'transferIndex']
   );
@@ -56,7 +56,7 @@ const _ = require('lodash');
       transfer.enforcedPreviousOwner === null || 
       transfer.enforcedPreviousOwner === (lastValid?.from || null);
 
-    if (basicRulePasses &#x26;&#x26; previousOwnerRulePasses) {
+    if (basicRulePasses && previousOwnerRulePasses) {
       valid.push(transfer);
     }
   }
