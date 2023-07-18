@@ -38,7 +38,8 @@ After ESIP-2, a valid ethscription transfer must have two properties:
 
 Below is an example of how an Ethscription transfers could be validated after the implementation of ESIP-2:
 
-<pre class="language-javascript"><code class="lang-javascript">const _ = require('lodash');
+```javascript
+const _ = require('lodash');
 
 <strong>function validTransfers(ethscriptionTransfers) {
 </strong>  const sorted = _.sortBy(
@@ -62,7 +63,7 @@ Below is an example of how an Ethscription transfers could be validated after th
 
   return valid;
 }
-</code></pre>
+```
 
 ## Rationale
 
