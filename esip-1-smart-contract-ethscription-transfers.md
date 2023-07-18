@@ -1,8 +1,4 @@
----
-description: Smart Contract Support (Transfers)
----
-
-# ESIP-1
+# ESIP-1: Smart Contract Ethscription Transfers
 
 #### Version History
 
