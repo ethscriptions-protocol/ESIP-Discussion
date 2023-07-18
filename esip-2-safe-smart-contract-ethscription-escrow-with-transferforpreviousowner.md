@@ -1,4 +1,8 @@
-# ESIP-2: Safe Smart Contract Ethscription Escrow With transferForPreviousOwner
+# ESIP-2: Safe Trustless Smart Contract Ethscription Escrow
+
+## <mark style="background-color:orange;">This ESIP a Draft</mark>
+
+Discuss and offer feedback [in this GitHub Issue](https://github.com/ethscriptions-protocol/ESIPs/issues/3).
 
 ## Abstract
 
@@ -23,7 +27,7 @@ When a contract emits this event, the protocol should register a valid ethscript
 1. The emitting contract owns the ethscription with id `ethscriptionId` when it emits the event.
 2. The ethscription's previous owner was `previousOwner` as defined below.
 
-An ethscription's "current owner" is the address that is in the "to" of the most recent valid  transfer of that ethscription.
+An ethscription's "current owner" is the address that is in the "to" of the most recent valid transfer of that ethscription.
 
 An ethscription's "previous owner" is the address that is in the "from" of the most recent valid transfer.
 
@@ -283,24 +287,3 @@ contract EthscriptionsEscrower {
 }
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
