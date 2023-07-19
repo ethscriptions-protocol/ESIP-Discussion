@@ -144,7 +144,7 @@ With ESIP-2 the contract doesn't have to gather the information necessary to det
 
 Instead, the contract does the same thing for Alice's withdraw as it does for Bob's. However, because `TransferEthscriptionForPreviousOwner` is only valid when Alice is the legitimate previous owner—which she cannot be here as her deposit is invalid—this transfer is invalid under the protocol and, like all invalid transfers, will be ignored by indexers.
 
-The goal is to make smart contracts "dumber." Instead of smart contracts having do decide which user requests to ignore based on different user permissions, the smart contract can treat all user requests the same, knowing that the invalid requests will be filtered out at the protocol level.
+The goal is to make smart contracts "dumber." Instead of smart contracts having to decide which user requests to ignore based on different user permissions, the smart contract can treat all user requests the same, knowing that the invalid requests will be filtered out at the protocol level.
 
 ## Example Smart Contract
 
